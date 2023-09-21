@@ -6,11 +6,21 @@
 	box-sizing: border-box;
 }
 
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .header {
 	display: flex;
 	align-items: center;
 	justify-content: start;
-	padding: 2.5rem 4.81rem;
+	padding: 1rem 2rem;
+	width: 100%;
 }
 
 .header p {
@@ -21,18 +31,19 @@
 }
 
 .main {
+	width: 100%;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: 7.5rem;
-	padding: 0 4.81rem;
 }
 
 .main img {
-	width: 34rem;
+	width: 32rem;
 	height: 28rem;
 }
 
-.main .main-container {
+.main .content-container {
 	font-family: "Space Mono", monospace;
 	display: flex;
 	flex-direction: column;
@@ -44,12 +55,14 @@
 	font-size: 4rem;
 	color: #333333;
 	margin-bottom: 2.25rem;
+	max-width: 600px;
 }
 
 .main .content-container p {
 	font-weight: 400;
 	font-size: 1.5rem;
 	color: #4f4f4f;
+	max-width: 400px;
 	margin-bottom: 4rem;
 }
 
@@ -60,6 +73,7 @@
 	font-size: 0.875rem;
 	padding: 1.5rem 2.5rem;
 	cursor: pointer;
+	border: 1px solid transparent;
 }
 
 .footer {
@@ -73,4 +87,27 @@
 
 .footer .userSpan {
 	font-weight: 700;
+}
+
+@media screen and (max-width: 375px) {
+	.main {
+		flex-direction: column;
+		gap: 2rem;
+		padding: 3rem 1.5rem;
+	}
+
+	.main .content-container h1 {
+		font-size: 2.5rem;
+		width: 100%;
+	}
+
+	.main .content-container p {
+		font-size: 1.125rem;
+		width: 100%;
+	}
+
+	.main img {
+		width: 19.2rem;
+		height: 16.8rem;
+	}
 }

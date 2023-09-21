@@ -17,5 +17,47 @@
 	font-family: "Inconsolata", monospace;
 	font-weight: 700;
 	font-size: 1.5rem;
-	color: #333;
+	color: #333333;
+}
+
+.main {
+	display: flex;
+	align-items: center;
+	gap: 7.5rem;
+	padding: 0 4.81rem;
+}
+
+.main img {
+	width: 34rem;
+	height: 28rem;
+}
+
+.main .main-container {
+	font-family: "Space Mono", monospace;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+.main .content-container h1 {
+	font-weight: 700;
+	font-size: 4rem;
+	color: #333333;
+	margin-bottom: 2.25rem;
+}
+
+.main .content-container p {
+	font-weight: 400;
+	font-size: 1.5rem;
+	color: #4f4f4f;
+	margin-bottom: 4rem;
+}
+
+.main .content-container button {
+	background-color: #333333;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 0.875rem;
+	padding: 1.5rem 2.5rem;
+	cursor: pointer;
 }

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@700&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;700&family=Space+Mono:wght@400;700&display=swap");
 
 * {
 	padding: 0;
@@ -60,4 +60,17 @@
 	font-size: 0.875rem;
 	padding: 1.5rem 2.5rem;
 	cursor: pointer;
+}
+
+.footer {
+	font-family: "Montserrat", sans-serif;
+	color: #bdbdbd;
+	font-weight: 500;
+	font-size: 0.875rem;
+	padding: 1.5rem 0;
+	text-align: center;
+}
+
+.footer .userSpan {
+	font-weight: 700;
 }
